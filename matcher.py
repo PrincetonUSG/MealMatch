@@ -10,7 +10,7 @@ from user_profile import get_from_netid
 from database import new_connection, close_connection
 from server import senior_year
 
-SITE_URL = "https://mealmatch-app.herokuapp.com/"
+SITE_URL = "https://mealmatch.tigerapps.org/"
 
 
 def remove_match(netid, matchid, phonenum):

@@ -68,7 +68,7 @@ def send_recurring_request_notifications_lunch():
     print(rows)
 
     recur_req_message = '''MealMatch: Your recurring lunch request for today is about to be submitted. Check the status on the app at {}'''.format(
-        'mealmatch-app.herokuapp.com/matches')
+        'mealmatch.tigerapps.org/matches')
 
     for row in rows:
         phonenum = row[0]
@@ -107,7 +107,7 @@ def send_recurring_request_notifications_dinner():
     print(rows)
 
     recur_req_message = '''MealMatch: Your recurring dinner request for today is about to be submitted. Check the status on the app at {}'''.format(
-        'mealmatch-app.herokuapp.com/matches')
+        'mealmatch.tigerapps.org/matches')
 
     for row in rows:
         phonenum = row[0]
