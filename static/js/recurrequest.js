@@ -1,5 +1,6 @@
 
 let curReqBanner = document.getElementById('currentRRHead');
+// check for banner existence
 if(curReqBanner !== null)
 	curReqBanner.addEventListener('click', () => {curReqBanner.classList.add('closed');})
 

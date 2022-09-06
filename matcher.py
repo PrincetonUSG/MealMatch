@@ -10,7 +10,7 @@ from user_profile import get_from_netid
 from database import new_connection, close_connection
 from server import senior_year
 
-SITE_URL = "https://mealmatch-app.herokuapp.com/"
+SITE_URL = "https://mealmatch.tigerapps.org/"
 
 
 def remove_match(netid, matchid, phonenum):
@@ -312,7 +312,7 @@ def accept_match(netid, matchid, phonenum):
                 match_name) + "\n" + SITE_URL+"matches"
         else:
             # If the other person has not accepted, notify the other person that match is confirmed
-            message = "{} also accepted the match! Have fun eating!".format(
+            message = "{} also accepted the match! Text your match and have fun eating!".format(
                 match_name)
             # match has been finalized, update matches count
             database.update_matches_usage_metric()
@@ -326,7 +326,7 @@ def accept_match(netid, matchid, phonenum):
                 match_name) + "\n" + SITE_URL+"matches"
         else:
             # If the other person has not accepted, notify the other person that match is confirmed
-            message = "{} also accepted the match! Have fun eating!".format(
+            message = "{} also accepted the match! Text your match and have fun eating!".format(
                 match_name)
             # match has been finalized, update matches count
             database.update_matches_usage_metric()
