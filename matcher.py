@@ -67,15 +67,11 @@ def score_match(first, second):
         if first[14] == "Major/Year":
 
             # add point if majors are the same
-            score += 1 if first[13] == second[13] else 0
+            score += int(first[13] == second[13])
 
-            # add point if class years are the same
-            # if both class years are beyond current senior year, they are both grad students,
+            # add point if class years are the same/ both are grad students
             # treat as matching year for matching algo, add a point
-            both_grad_students = first[12] < senior_year(
-            ) and second[12] < senior_year()
-            score += 1 if (first[12] == second[12]
-                           or both_grad_students) else 0
+            score += int(first[12] == second[12])
         # Both random matching preferences
         else:
             score += 2
