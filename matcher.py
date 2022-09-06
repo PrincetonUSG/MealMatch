@@ -312,7 +312,7 @@ def accept_match(netid, matchid, phonenum):
                 match_name) + "\n" + SITE_URL+"matches"
         else:
             # If the other person has not accepted, notify the other person that match is confirmed
-            message = "{} also accepted the match! Have fun eating!".format(
+            message = "{} also accepted the match! Text your match and have fun eating!".format(
                 match_name)
             # match has been finalized, update matches count
             database.update_matches_usage_metric()
@@ -326,7 +326,7 @@ def accept_match(netid, matchid, phonenum):
                 match_name) + "\n" + SITE_URL+"matches"
         else:
             # If the other person has not accepted, notify the other person that match is confirmed
-            message = "{} also accepted the match! Have fun eating!".format(
+            message = "{} also accepted the match! Text your match and have fun eating!".format(
                 match_name)
             # match has been finalized, update matches count
             database.update_matches_usage_metric()
