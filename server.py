@@ -145,12 +145,6 @@ def form():
     return redirect('/index')
 
 
-# TEST ROUTE --- FORCE MATCHES
-@app.route('/forcematches', methods=['GET'])
-def force_matches():
-    matcher.match_requests()
-    return redirect("/matches")
-
 
 # SUBMIT REQUEST
 @app.route('/submitrequest', methods=['GET'])

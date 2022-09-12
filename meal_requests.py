@@ -1,5 +1,3 @@
-from ast import Is
-from requests import get
 from database import new_connection, close_connection, update_request_usage_metric
 from matcher import match_requests
 from big_lists import dhall_list
