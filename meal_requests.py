@@ -19,11 +19,6 @@ def add_request(netid, meal_type, start_time, end_time, dhall_arr, atdhall):
         dhall_arr[2] = True
         dhall_arr[5] = True
 
-    # TODO: TEMP FIX to make Yeh/NCW match together
-    if dhall_arr[2] or dhall_arr[5]:
-        dhall_arr[2] = True
-        dhall_arr[5] = True
-
     cur, conn = new_connection()
 
     # confirm the user does not have an existing request for the current meal period
