@@ -5,11 +5,7 @@ from big_lists import dhall_list
 
 
 def new_connection():
-    conn = connect(database=environ["DATABASE"],
-                   user=environ['DB_USERNAME'],
-                   password=environ['DB_PASSWORD'],
-                   host=environ['DB_HOST'],
-                   port=environ['DB_PORT'])
+    conn = connect(environ["DATABASE_URL"])
     cur = conn.cursor()
     return cur, conn
 
